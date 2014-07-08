@@ -1,34 +1,64 @@
 body { font-size: 3.8vmin;
 font-family: 'Open Sans', sans-serif; 
-text-align:center; }
+text-align:center;
+}
+
+section {
+    text-align:center;
+    padding: 20vmin 0 20vmin 0;
+    color: #333;
+    box-shadow: inset 0px 1px 0px 0px rgba(0,0,0,0.05), inset 0px 2px 3px 0px rgba(0,0,0,0.1);
+    background-color: #d0d0d0;
+    text-shadow: 1px 1px 0px #fff;
+}
+
+section:first-of-type {
+    color: #000;
+    box-shadow: inset 0px 1px 0px 0px rgba(0,0,0,0.05), inset 0px 2px 3px 0px rgba(0,0,0,0.1);
+    background-color: #fff;
+}
+
+section article {
+    width:80vw;
+    max-width:880px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+h1 {
+    color: #3e3e3e;
+    font-weight: 300;
+    letter-spacing: -0.04em;
+    font-size: 8vmin;
+}
 
 p {
     line-height: 6vmin;
-    margin-bottom: 12vmin;
+    margin-bottom: 8vmin;
 }
 
 header img { border-radius: 50%; 
     width: 70%;
-    max-width: 15em;
+    max-width: 10em;
 }
 
-nav { width: 100%;
+body>nav { width: 100%;
     font-size:85%;
     position: fixed;
     text-align: center;
     color: #888;
     background-color: #282828;
     height: 3em;
-     }
+    z-index:1;
+    }
 
-
-nav ul { margin:0;
+body>nav ul { margin:0;
 padding:0;
      }
 
-nav ul li { display:inline-block; }
+body>nav ul li { display:inline-block; }
 
-nav ul li a {
+body>nav ul li a {
     height:3em;
     line-height:3em;
     padding: 0 2vw 0 2vw;
@@ -42,23 +72,13 @@ nav ul li a {
     position: relative;
 }
 
-nav ul li a:hover { background-color:#888; }
+body>nav ul li a:hover { background-color:#888; }
 
 strong { font-weight: 120%; }
 
-section { /* padding:20vmin 20vw 20vmin 20vw;*/
-    padding: 20vmin 0 20vmin 0;
-    width:80vw;
-    max-width:880px;
-    margin-left:auto;
-    margin-right:auto;
-}
-
-h1 {
-    color: #3e3e3e;
-    font-weight: 300;
-    letter-spacing: -0.04em;
-    font-size: 8vmin;
+section:nth-of-type(2) nav {
+    margin-left:30%;
+    text-align:left;
 }
 
 .nowrap { white-space:nowrap; }
@@ -86,11 +106,22 @@ h1 {
     background-color: #76cdf0;
     
 }
+/*
+@media all and (min-width: 955px) {
 
-@media all and (min-width: 925px) {
+article { text-align:left; }
 
-article header { text-align:left; }
+header img { float:left; margin-right:1em; }
 
-header img { float:left; margin-right:1em;}
+body { font-size: 2.8vw; }
 
+h1 {
+    font-size: 5vw;
 }
+
+p {
+    line-height: 6vw;
+    margin-bottom: 12vw;
+}
+
+}*/
