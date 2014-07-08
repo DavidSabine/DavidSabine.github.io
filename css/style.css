@@ -1,4 +1,4 @@
-body { font-size: 4vmin;
+body { font-size: 3.8vmin;
 font-family: 'Open Sans', sans-serif; 
 text-align:center; }
 
@@ -13,6 +13,7 @@ header img { border-radius: 50%;
 }
 
 nav { width: 100%;
+    font-size:85%;
     position: fixed;
     text-align: center;
     color: #888;
@@ -45,8 +46,10 @@ nav ul li a:hover { background-color:#888; }
 
 strong { font-weight: 120%; }
 
-section { padding:20vmin 20vw 20vmin 20vw;
-    max-width:800px;
+section { /* padding:20vmin 20vw 20vmin 20vw;*/
+    padding: 20vmin 0 20vmin 0;
+    width:80vw;
+    max-width:880px;
     margin-left:auto;
     margin-right:auto;
 }
@@ -82,4 +85,12 @@ h1 {
 .button:hover {
     background-color: #76cdf0;
     
+}
+
+@media all and (min-width: 925px) {
+
+article header { text-align:left; }
+
+header img { float:left; margin-right:1em;}
+
 }
