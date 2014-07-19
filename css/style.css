@@ -109,17 +109,23 @@ section:nth-of-type(2) nav>ul {
     margin:2vw;
     margin-left:auto;
     margin-right:auto;
-    width:50vmin;
+    /*width:50vmin;*/
 }
+
+section:nth-of-type(2) nav>ul:after {
+    content: "\00a0";
+    clear:both;
+}
+
 
 section:nth-of-type(2) nav>ul>li {
     font-weight:600;
-    width:100%;
+    width:42%;margin:4%;
+    float:left;
     height:45vmin;
     background: #fff;
     box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.15), 0px 2px 3px 0px rgba(0,0,0,0.1);
     padding: 2vw 2vw 2vw 2vw;
-    margin-bottom: 8vmin;
 }
 
 section:nth-of-type(2) nav>ul>li ul {
@@ -136,7 +142,6 @@ section:nth-of-type(2) nav>ul>li:before {
     margin:8vmin 0 4vmin 0;
     font-size:8vmin;
     line-height:8vmin;
-
 }
 
 section:nth-of-type(2) nav>ul>li.business:before {
@@ -187,6 +192,8 @@ section a.button {
 section a.button:hover {
     background-color: #76cdf0;  
 }
+
+
 /*
 @media all and (min-width: 955px) {
 
