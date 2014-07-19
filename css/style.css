@@ -115,7 +115,7 @@ section:nth-of-type(2) nav>ul {
 section:nth-of-type(2) nav>ul>li {
     font-weight:600;
     width:100%;
-    height:40vmin;
+    height:45vmin;
     background: #fff;
     box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.15), 0px 2px 3px 0px rgba(0,0,0,0.1);
     padding: 2vw 2vw 2vw 2vw;
@@ -131,12 +131,36 @@ section:nth-of-type(2) nav>ul>li:before {
     cursor:pointer;
     font-family: FontAwesome;
     color:#EAB78A;
-    content:"\f087";
+    content:"\f09e";
     display:block;
     margin:8vmin 0 4vmin 0;
     font-size:8vmin;
     line-height:8vmin;
 
+}
+
+section:nth-of-type(2) nav>ul>li.business:before {
+    content:"\f0ec";
+}
+
+section:nth-of-type(2) nav>ul>li.technology:before {
+    content:"\f06d";
+}
+
+section:nth-of-type(2) nav>ul>li.music:before {
+    content:"\f001";
+}
+
+section:nth-of-type(2) nav>ul>li.brilliance:before {
+    content:"\f0eb";
+}
+
+section:nth-of-type(2) nav>ul>li.politics:before {
+    content:"\f19c";
+}
+
+section:nth-of-type(2) nav>ul>li.gaia:before {
+    content:"\f0ac";
 }
 
 .nowrap { white-space:nowrap; }
