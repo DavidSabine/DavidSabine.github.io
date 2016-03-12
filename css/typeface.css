@@ -1,0 +1,35 @@
+body {
+	font-size: 3.8vmin;
+	font-family: 'Open Sans', sans-serif;
+}
+
+section a,
+section a:visited {
+	color: #000; /* #3b95c6;*/
+	text-decoration: none;
+}
+
+section a:hover,
+section a:active {
+	color: #EAB78A;
+}
+
+h1 {
+	color: #3e3e3e;
+	font-weight: 300;
+	letter-spacing: -0.04em;
+	font-size: 8vmin;
+}
+
+p {
+	line-height: 6vmin;
+	margin-bottom: 8vmin;
+}
+
+strong {
+	font-weight: 120%;
+}
+
+.nowrap {
+	white-space: nowrap;
+}
