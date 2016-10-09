@@ -9,30 +9,30 @@ header img {
 	max-width: 10em;
 }
 
-section.blogs nav {
+section#blogs nav {
 	text-align: center;
 	margin: 0;
 	font-size: 80%;
 }
 
-section.blogs ul {
+section#blogs ul {
 	margin: 0;
 	padding: 0;
 	list-style: none;
 }
 
-section.blogs nav>ul {
+section#blogs nav>ul {
 	margin: 2vw;
 	margin-left: auto;
 	margin-right: auto;    /*width:50vmin;*/
 }
 
-section.blogs nav>ul:after {
+section#blogs nav>ul:after {
 	content: "\00a0";
 	clear: both;
 }
 
-section.blogs nav>ul>li {
+section#blogs nav>ul>li {
 	font-weight: 600;
 	width: 42%;
 	margin: 4%;
@@ -43,12 +43,12 @@ section.blogs nav>ul>li {
 	padding: 2vw 2vw 2vw 2vw;
 }
 
-section.blogs nav>ul>li ul {
+section#blogs nav>ul>li ul {
 	margin-top: 2vw;
 	font-weight: normal;
 }
 
-section.blogs nav>ul>li:before {
+section#blogs nav>ul>li:before {
 	cursor: pointer;
 	font-family: FontAwesome;
 	color: #EAB78A;
@@ -59,31 +59,31 @@ section.blogs nav>ul>li:before {
 	line-height: 8vmin;
 }
 
-section.blogs nav>ul>li.business:before {
+section#blogs nav>ul>li.business:before {
 	content: "\f0ec";
 }
 
-section.blogs nav>ul>li.technology:before {
+section#blogs nav>ul>li.technology:before {
 	content: "\f06d";
 }
 
-section.blogs nav>ul>li.music:before {
+section#blogs nav>ul>li.music:before {
 	content: "\f001";
 }
 
-section.blogs nav>ul>li.brilliance:before {
+section#blogs nav>ul>li.brilliance:before {
 	content: "\f0eb";
 }
 
-section.blogs nav>ul>li.politics:before {
+section#blogs nav>ul>li.politics:before {
 	content: "\f19c";
 }
 
-section.blogs nav>ul>li.gaia:before {
+section#blogs nav>ul>li.gaia:before {
 	content: "\f0ac";
 }
 
-section.onlinecommunities {
+section#onlinecommunities {
 	background-color: #f4f4f4;
 }
 
