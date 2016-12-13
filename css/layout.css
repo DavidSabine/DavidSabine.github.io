@@ -25,7 +25,7 @@ section article {
     margin-right: auto;
 }
 
-body>nav {
+nav#site {
     width: 100%;
     font-size: 85%;
     position: fixed;
@@ -36,16 +36,16 @@ body>nav {
     z-index: 1;
 }
 
-body>nav ul {
+nav#site ul {
     margin: 0;
     padding: 0;
 }
 
-body>nav ul li {
+nav#site ul li {
     display: inline-block;
 }
 
-body>nav ul li a {
+nav#site ul li a {
     height: 3em;
     line-height: 3em;
     padding: 0 2vw 0 2vw;
@@ -59,7 +59,7 @@ body>nav ul li a {
     position: relative;
 }
 
-body>nav a:hover {
+nav#site a:hover {
     background-color: #888;
 }
 
