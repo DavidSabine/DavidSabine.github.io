@@ -74,7 +74,8 @@ var aboutscrumalliancecertifications = new Waypoint.Inview({
 		if(direction=="down") {
 			var arr = [direction,aboutscrumalliancecertificationslos];
 			adjustLearningObjectives(arr);
-		};  	
+		};
+		$.notify("Blah blah blah",{ style:"info",position:"right middle" });
 	},
 	exited: function(direction) {
 		if(direction=="up") {
@@ -108,7 +109,8 @@ var classroomexpectationsforcertification = new Waypoint.Inview({
 		if(direction=="down") {
 			var arr = [direction,classroomexpectationsforcertificationlos];
 			adjustLearningObjectives(arr);
-		};  	
+		};
+		$.notify("Expecations for Certification",{ style:"info",position:"right middle" });
 	},
 	exited: function(direction) {
 		if(direction=="up") {
@@ -203,7 +205,8 @@ var sprint1increment = new Waypoint.Inview({
 		if(direction=="down") {
 			var arr = [direction,sprint1incrementlos];
 			adjustLearningObjectives(arr);
-		};  	
+		};
+		$.notify("Sprint 1 - Increment",{ style:"info",position:"right middle" });
 	},
 	exited: function(direction) {
 		if(direction=="up") {

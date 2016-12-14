@@ -13,8 +13,8 @@ h1 {
 }
 
 p {
-	line-height: 4vmin;
-	margin-bottom: 4vmin;
+	line-height: 3.8vmin;
+	margin-bottom: 3.8vmin;
 }
 
 /*layout overrides*/
@@ -64,7 +64,7 @@ footer {
     box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.05), inset 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
     background-color: #fafafa;
     text-shadow: 1px 1px 0px #fff;
-	height: 19vw;
+	height: 10.1vw;
 	position: fixed;
 	bottom: 0;
 	width: 100%;
@@ -72,7 +72,7 @@ footer {
 
 footer>ul {
 	transform: rotate(-90deg);
-	transform-origin: 57% 9% 0;
+	transform-origin: 58% 4.5% 0px;
 	text-align: left;
 	float: left;
 	line-height: 1.25vw;
@@ -87,7 +87,7 @@ footer ul {
 footer li {
 	margin: 0;
 	padding: 0;
-	font-size: 0.9vw;
+	font-size: 0.6vw;
 	position: relative;
 }
 
