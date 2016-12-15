@@ -1,3 +1,17 @@
+var initnotifications = new Waypoint.Inview({
+	element: document.querySelector("body>header>h1"),
+	exit: function(direction) {
+		if(direction=="down") {
+			$.notify("Training techniques will appear here. (TFTBOTR & others)",{ style:"info",position:"right middle","autoHideDelay": 2000 });
+		};
+	},
+	entered: function(direction) {
+		if(direction=="up") {
+			var arr = [direction,null];
+			adjustLearningObjectives(arr);
+		};
+	}});
+
 function addNotifyStyles() {
 	$.notify.addStyle('info', {
 		html: "<div><span data-notify-text/></div>",
@@ -18,11 +32,10 @@ function addNotifyStyles() {
 	});
 }
 
-function showTFTBOTR() {
-	$.notify("Training techniques will appear here. (TFTBOTR & others)",{ style:"info",position:"right middle","autoHideDelay": 2000 });
-}
-
 function adjustLearningObjectives(arr) {
+	if(arr[1]===null) {
+		return resetDivsToLearningObjectives();
+	}
 	for (n in arr[1]) {
 		var lo = document.getElementById(arr[1][n].lo).firstChild;
 		var pw = percentwidth(lo);
@@ -43,7 +56,7 @@ function percentwidth(elem) {
 }
 
 var whenReady = (function() { // http://www.dyn-web.com/tutorials/init.php
-	var funcs = [addDivsToLearningObjectives, addNotifyStyles,showTFTBOTR];
+	var funcs = [addDivsToLearningObjectives, addNotifyStyles];
 	var ready = false;
 
 	function handler(e) {
@@ -76,6 +89,13 @@ function addDivsToLearningObjectives() {
 	for (i = 0; i < learningobjectives.length; i++) {
 		var div = document.createElement("DIV");
 		learningobjectives[i].insertBefore(div, learningobjectives[i].childNodes[0]);
+	}
+}
+
+function resetDivsToLearningObjectives() {
+	var learningobjectivesdiv = document.querySelectorAll("ul#learningobjectives li>div");
+	for (i = 0; i < learningobjectivesdiv.length; i++) {
+		learningobjectivesdiv[i].style.width = "1%";
 	}
 }
 

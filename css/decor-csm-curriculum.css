@@ -29,13 +29,22 @@ section {
     box-shadow:none;
 }
 
+body>section {
+	text-align:left;
+}
+
+body>section ul ul li {
+	display:inline-block;
+	width:30%;
+}
+
 section.module {
 	border:solid 1px #ddd;
 	margin:auto;
 	width:80%;
 	background-color:#fff;
 	box-shadow:3px 1px 4px rgba(0,0,0,0.1), inset 0px 0px 40px rgba(0,0,0,0.05);
-    margin-bottom:19vh;
+    margin:30vh auto;
 	text-align:left;
 	text-shadow:none;
 	position:relative;
@@ -49,13 +58,28 @@ section.module aside.timings {
 	font-size:80%;
 	text-align:right;
 	display:inline-block;
-	background-color:#ccc;
 	color:#303030;
 	position:absolute;
-	bottom:1em;
+	bottom:0;
 	right:0;
 	padding:0.6vh 3vh;
-	box-shadow:-2px -1px 4px 0px rgba(0,0,0,0.2);
+	border:solid 1px #ccc;
+	border-width:1px 0 0 1px;
+	border-radius:1em 0;
+}
+
+section.module aside.attribution {
+	font-size:80%;
+	text-align:left;
+	display:inline-block;
+	color:#303030;
+	position:absolute;
+	bottom:0;
+	left:0;
+	padding:0.6vh 3vh;
+	border:solid 1px #ccc;
+	border-width:1px 1px 0 0;
+	border-radius:0 1em;
 }
 
 footer {

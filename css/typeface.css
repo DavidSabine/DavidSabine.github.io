@@ -1,5 +1,5 @@
 body {
-	font-size: 3.8vmin;
+	font-size: 3vmin;
 	font-family: 'Open Sans', sans-serif;
 }
 
@@ -18,12 +18,12 @@ h1 {
 	color: #3e3e3e;
 	font-weight: 300;
 	letter-spacing: -0.04em;
-	font-size: 8vmin;
+	font-size: 6vmin;
 }
 
 p {
-	line-height: 6vmin;
-	margin-bottom: 8vmin;
+	line-height: 5vmin;
+	margin-bottom: 5vmin;
 }
 
 strong {
