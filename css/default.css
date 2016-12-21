@@ -1,6 +1,6 @@
 .hide { display:none; }
 
-p, h1, h2, h3, h4, h5, h6, dl, dt, dd, ol, ul, li, address, blockquote, center, del, div, hr, ins, noscript, pre, input {
+p, h1, h2, h3, h4, h5, h6, dl, dt, dd, ol, ul, li, address, blockquote, center, del, div, hr, ins, noscript, pre, input, aside {
  -moz-box-sizing: border-box;
  box-sizing: border-box;
  -webkit-box-sizing: border-box; /* 2 */
